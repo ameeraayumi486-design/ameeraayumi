@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+    <!-- Link to JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="images/profile.jpeg" alt="Profile Picture" title="This is me!" class="profile" >
+        <p><strong>Name:</strong> Ameera Ayumi binti Mohamad Azmi</p>
+        <p><strong>Age:</strong> 19 </p>
+        <p><strong>Date of Birth:</strong> 4 March 2006</p>
+        <button class="btn btn-success" onclick="downloadPDF()">Download resume</button>
+        <script>
+            function downloadPDF() {
+                const link = document.createElement('a');
+                link.href = 'files/resume.pdf'; 
+                link.download = 'My_Resume.pdf';        
+                link.click();
+            }
+        </script>
+    </section>
+
+
+
+
+    <!-- Education Section -->
+    <section id="education">
+        <h1>Education</h1>
+        <div class="grid1">
+            <div class="card1">
+                <h3>Middle School</h3>
+                <p> Study at SK Seri Iskandar, Perak </p>
+                <img src="images/middle.jpg" alt="My Middle School!" title="My school!" class="middleschool" >
+                
+            </div>
+            <div class="card1">
+                <h3>High School</h3>
+                <p> Study in SMKA Sultan Azlan Shah, Perak.</p>
+                 <img src="images/highschool.jpeg" alt="My High School!" title="This is me!" class="highschool" >
+                
+            </div>
+            <div class="card1">
+                <h3>University</h3>
+                <p> Studying In Universiti Teknology Petronas, Perak.</p>
+                <img src="images/utp.jpeg" alt="My University!" title="University" class="university" >
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Building structured web pages</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Styling and responsive design</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-cplusplus"></i>
+                <h3>C++</h3>
+                <p>Problem-solving and programming</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-cplusplus"></i>
+                <h3>Python</h3>
+                <p>Basic programming and problem-solving</p>
+
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-cplusplus"></i>
+                <h3>Visual Basic</h3>
+                <p>Creating simple programs with user interfaces</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Work Experience Section -->
+    <section id="work">
+        <h2>Work Experience</h2>
+        <div class="grid2">
+
+            <div class="card2">
+                <h3>Sept'24</h3>
+                <ul type= none>
+                    <li>Assistant Project Director Of  TTS KickOff</li>
+                    <li>Assistant Project Director of TTS Family Day</li>
+                    <li>Committee for Back to School Event at MRSM Parit</li>
+                    <li>Committee for Tronoh Theatre Shop's Show "Siung Maharaja"</li>
+                </ul>
+                <div class="media-row1">
+                    <img src="images/kickoff.jpeg" alt="KickOff" >
+                    <img src="images/famday.jpeg" alt="Family Day" >
+                    <img src="images/bts.jpeg" alt="Back to School" >
+                    <img src="images/siung.jpeg" alt="Siung Maharaja" >
+                </div>
+            </div>
+
+            <div class="card2">
+                <h3>Jan'25</h3>
+                <ul type=none>
+                    <li>High Committee for Tronoh Theatre Shop Club</li>
+                    <li>Director for Tronoh Theatre Shop's Show "Hantu Kubur"</li>
+                    <li>Committee of Down to Earth Project "KampusToKampung"</li>
+                </ul>
+                <div class="media-row2">
+                    <img src="images/hicom.jpeg" alt="High Committee" >
+                    <img src="images/hantu.jpeg" alt="Hantu Kubur" >
+                    <video width="400" src="images/dte.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h3>May'25</h3>
+                <ul type=none>
+                    <li>Committee fot TTS CSR to Kampung Klewang</li>
+                    <li>Committee for Vinyl of Nusantara</li>
+                </ul>
+                <div class="media-row3">
+                    <video width="400" src="assests/images/csr.mp4" controls></video>
+                    <img src="images/von.jpeg" alt="Vinyl of Nusantara">
+                    <img src="images/von2.jpeg" alt="Vinyl of Nusantara" >
+                </div>
+            </div>
+
+            <div class="card2">
+                <h3>Sept'25</h3>
+                <ul type=none>
+                    <li>Director of CULTRA'25</li>
+                </ul>
+                <div class="media-row4">
+                    <img src="images/cultra.jpeg" alt="CULTRA'25">
+                    <img src="images/cultra2.jpeg" alt="CULTRA'25" >
+                </div>
+            </div>
+
+
+
+
+        <!-- Tooltip -->
+        <div id="tooltip" class="tooltip">Tooltip text</div>
+    </section>
+
+
+
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+            <div class="card">
+                <h3>🎓 Dean’s List</h3>
+                 <p>Achieved for four consecutive semesters and hoping to keep striving.</p>
+             </div>
+             <div class="card">
+                <h3>💡 Volunteer Lead</h3>
+                <p>Director in big event such as CULTRA'25</p>
+            </div>
+            <div class="card">
+                <h3>🏅 Academically</h3>
+                <p>First Class Category for foundation study completion.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Phone:</strong> 013-3987796</p>
+        <p><strong>Email:</strong> ameera_24003865@utp.edu.my</p>
+        <div class="contact-container">
+            <a href="mailto:ameera_24003865@utp.edu.my" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <p>Email</p>
+            </a>
+            <a href="https://www.github.com/ameeraayummi486-design" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+            </a>
+            <a href="https://wa.me/60133987796" target="_blank" class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <p>WhatsApp</p>
+             </a>
+         </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer> 
+        <p> &copy; AmeeraAyumi </p>
+    </footer>
+
+
+</body>
+</html>

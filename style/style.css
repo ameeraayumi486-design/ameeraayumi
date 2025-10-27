@@ -1,0 +1,348 @@
+/* General page setup */
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    background-color: beige;
+    text-align: center;
+}
+
+
+
+
+
+/* Horizontal Navigation Bar */
+nav {
+    background-color: lightyellow;
+    padding: 10px 0;
+}
+
+.navbar {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: saddlebrown;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Section styling */
+section {
+    padding: 10px;
+    margin: 30px;
+    background-color: ivory;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding-bottom: 12px;
+}
+
+
+
+
+/* Image */
+.profile {
+    width: 490px;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.highschool {
+    width: 240px;
+    height: 230px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+.middleschool {
+    width: 240px;
+    height: 230px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+.university {
+    width: 240px;
+    height: 230px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+
+.media-row1 {
+    display: center;          
+    gap: 20px;               
+    align-items: flex-start; 
+    flex-wrap: wrap;         
+}
+
+.media-row1 img {
+    width: 330px;   
+    height: auto;   
+    border-radius: 8px; 
+}
+
+.media-row2 {
+    display: center;          
+    gap: 20px;               
+    align-items: flex-start; 
+    flex-wrap: wrap;         
+}
+
+.media-row2 video,
+.media-row2 img {
+    width: 450px;   
+    height: auto;   
+    border-radius: 8px; 
+}
+
+.media-row3 {
+    display: center;          
+    gap: 20px;               
+    align-items: flex-start; 
+    flex-wrap: wrap;         
+}
+
+.media-row3 video,
+.media-row3 img {
+    width: 440px;   
+    height: auto;   
+    border-radius: 8px; 
+}
+
+.media-row4 img {
+    width: 330px;   
+    height: auto;   
+    border-radius: 8px; 
+}
+
+.media-row4 {
+    display: center;          
+    gap: 20px;               
+    align-items: center; 
+    flex-wrap: flex-start; 
+}
+
+
+
+
+
+/*Grid Layout for Education*/
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card1 {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+
+/* Grid Layout for Work Experience */
+.work-experience-container {
+    display: grid2;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 20px; 
+}
+
+.card2 {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+
+/*Skills Section*/
+#skills {
+  text-align: center;
+  padding: 50px;
+  background: #fafafa;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: ivory;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: lightyellow;
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.skill-card i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+
+
+/*Achievemnts section*/
+#achievements {
+  background-color: #fafafa;
+  padding:
+   30px;
+  text-align: center;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+/*Contact section*/
+#contact {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(white);
+  color: black;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  text-decoration: none;
+  color: black;
+  background: lightyellow;
+  padding: 20px;
+  border-radius: 12px;
+  width: 120px;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  background: beige;
+  transform: scale(1.05);
+}
+
+
+
+
+/* Buttons */
+button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a4161a;
+}
+.email-button {
+    background-color: #800000;  
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.email-button:hover {
+    background-color: #a4161a;  
+}
+
+
+
+
+
+/* Tooltip */
+.tooltip {
+    display: none;
+    position: fixed;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
